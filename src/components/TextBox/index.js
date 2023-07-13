@@ -1,8 +1,14 @@
 import './TextBox.css'
 
-const TextBox =() => {
+const TextBox =(props) => {
+
+    const placeHolderModificado = `${props.placeholder}...`
+
     return (
-    <label>Nome</label>
+        <div className='text-box'>
+            <label>{props.label}</label>
+            <input placeholder={placeHolderModificado}/>
+        </div>
     )
     
 }
