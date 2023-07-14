@@ -1,14 +1,12 @@
 import Banner from './components/Banner';
-import TextBox from './components/TextBox';
+import Forms from './components/Forms';
 
 function App() {
   return (
-    
+
     <div className="App">
-      <Banner/>
-      <TextBox label="Nome" placeholder="Digite o seu nome"/>
-      <TextBox label="Cargo" placeholder="Digite o seu cargo"/>
-      <TextBox label="Imagem" placeholder="Digite o endereço da imagem"/>
+      <Banner  />
+      <Forms title="Preencha os dados para criar o card do colaborador." />
     </div>
   );
 }
